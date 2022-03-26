@@ -1,0 +1,191 @@
+[pl543@c22n01 ~]$ /usr/bin/X  :7.0 -verbose
+_XSERVTransSocketOpenCOTSServer: Unable to open socket for inet6
+_XSERVTransOpen: transport open failed for inet6/c22n01.grace.hpc.yale.internal:6
+_XSERVTransMakeAllCOTSServerListeners: failed to open listener for inet6
+
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+Build Operating System:  3.10.0-1160.31.1.el7.x86_64 
+Current Operating System: Linux c22n01.grace.hpc.yale.internal 3.10.0-1160.53.1.el7.x86_64 #1 SMP Thu Dec 16 10:19:28 UTC 2021 x86_64
+Kernel command line: BOOT_IMAGE=/vmlinuz-3.10.0-1160.53.1.el7.x86_64 root=/dev/mapper/vg-root ro rd.lvm.lv=vg/root rd.lvm.lv=vg/swap console=tty1 nosoftlockup mce=ignore_ce nomodeset ipv6.disable=1 console=ttyS0,115200 nosmt intel_idle.max_cstate=0 processor.max_cstate=1 intel_pstate=disable nouveau.modeset=0 rd.driver.blacklist=nouveau
+Build Date: 21 December 2021  02:52:00PM
+Build ID: xorg-x11-server 1.20.4-17.el7_9 
+Current version of pixman: 0.34.0
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.6.0.log", Time: Fri Mar 25 16:14:42 2022
+(==) Using config file: "/etc/X11/xorg.conf"
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) ServerLayout "Layout0"
+(**) |-->Screen "Screen0" (0)
+(**) |   |-->Monitor "Monitor0"
+(**) |   |-->Device "Device0"
+(**) |-->Screen "Screen1" (1)
+(**) |   |-->Monitor "Monitor1"
+(**) |   |-->Device "Device1"
+(**) |-->Screen "Screen2" (2)
+(**) |   |-->Monitor "Monitor2"
+(**) |   |-->Device "Device2"
+(**) |-->Screen "Screen3" (3)
+(**) |   |-->Monitor "Monitor3"
+(**) |   |-->Device "Device3"
+(**) |-->Input Device "Keyboard0"
+(**) |-->Input Device "Mouse0"
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Automatically binding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+(==) ModulePath set to "/usr/lib64/xorg/modules"
+(WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+(WW) Disabling Keyboard0
+(WW) Disabling Mouse0
+(II) xfree86: Adding drm device (/dev/dri/card0)
+(II) Platform probe for /sys/devices/pci0000:00/0000:00:03.0/0000:0b:00.0/0000:0c:08.0/0000:0d:00.0/drm/card0
+(II) xfree86: Adding drm device (/dev/dri/card1)
+(II) Platform probe for /sys/devices/pci0000:00/0000:00:03.0/0000:0b:00.0/0000:0c:10.0/0000:0e:00.0/drm/card1
+(II) xfree86: Adding drm device (/dev/dri/card2)
+(II) Platform probe for /sys/devices/pci0000:80/0000:80:02.0/0000:81:00.0/0000:82:08.0/0000:83:00.0/drm/card2
+(II) xfree86: Adding drm device (/dev/dri/card3)
+(II) Platform probe for /sys/devices/pci0000:80/0000:80:02.0/0000:81:00.0/0000:82:10.0/0000:84:00.0/drm/card3
+(--) PCI: (13@0:0:0) 10de:102d:10de:106c rev 161, Mem @ 0x93000000/16777216, 0x38400000000/17179869184, 0x383fe000000/33554432, BIOS @ 0x????????/65536
+(--) PCI: (14@0:0:0) 10de:102d:10de:106c rev 161, Mem @ 0x94000000/16777216, 0x38c00000000/17179869184, 0x38bfe000000/33554432, BIOS @ 0x????????/65536
+(--) PCI:*(20@0:0:0) 102b:0534:1d49:0a01 rev 1, Mem @ 0x95000000/16777216, 0x91ffc000/16384, 0x92000000/8388608, BIOS @ 0x????????/131072
+(--) PCI: (131@0:0:0) 10de:102d:10de:106c rev 161, Mem @ 0xc9000000/16777216, 0x3c400000000/17179869184, 0x3c3fe000000/33554432, BIOS @ 0x????????/65536
+(--) PCI: (132@0:0:0) 10de:102d:10de:106c rev 161, Mem @ 0xca000000/16777216, 0x3cc00000000/17179869184, 0x3cbfe000000/33554432, BIOS @ 0x????????/65536
+(WW) "glamoregl" will not be loaded unless you've specified it to be loaded elsewhere.
+(II) "glx" will be loaded by default.
+(II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.20.4, module version = 1.0.0
+(II) Loading /usr/lib64/xorg/modules/drivers/nvidia_drv.so
+(II) Module nvidia: vendor="NVIDIA Corporation"
+	compiled for 1.6.99.901, module version = 1.0.0
+(II) NVIDIA dlloader X Driver  470.82.01  Wed Oct 27 21:23:16 UTC 2021
+(II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+(--) using VT number 7
+
+(II) Loading /usr/lib64/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.20.4, module version = 1.0.0
+(II) Loading /usr/lib64/xorg/modules/libwfb.so
+(II) Module wfb: vendor="X.Org Foundation"
+	compiled for 1.20.4, module version = 1.0.0
+(**) NVIDIA(0): Depth 24, (--) framebuffer bpp 32
+(==) NVIDIA(0): RGB weight 888
+(==) NVIDIA(0): Default visual is TrueColor
+(==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+(**) NVIDIA(0): Enabling 2D acceleration
+(II) Loading /usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so
+(II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+	compiled for 1.6.99.901, module version = 1.0.0
+(II) NVIDIA GLX Module  470.82.01  Wed Oct 27 21:19:55 UTC 2021
+(II) NVIDIA: The X server does not support PRIME Render Offload.
+(II) NVIDIA(0): NVIDIA GPU Tesla K80 (GK210) at PCI:13:0:0 (GPU-0)
+(--) NVIDIA(0): Memory: 11796480 kBytes
+(--) NVIDIA(0): VideoBIOS: 80.21.1f.00.01
+(II) NVIDIA(0): Detected PCI Express Link width: 16X
+(II) NVIDIA(0): Validated MetaModes:
+(II) NVIDIA(0):     "NULL"
+(**) NVIDIA(0): Virtual screen size configured to be 1920 x 1200
+(WW) NVIDIA(0): Unable to get display device for DPI computation.
+(==) NVIDIA(0): DPI set to (75, 75); computed from built-in default
+(**) NVIDIA(1): Depth 24, (--) framebuffer bpp 32
+(==) NVIDIA(1): RGB weight 888
+(==) NVIDIA(1): Default visual is TrueColor
+(==) NVIDIA(1): Using gamma correction (1.0, 1.0, 1.0)
+(**) NVIDIA(1): Enabling 2D acceleration
+(II) NVIDIA: The X server does not support PRIME Render Offload.
+(EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA GPU at PCI:14:0:0.  Please
+(EE) NVIDIA(GPU-1):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-1):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-1):     README for additional information.
+(EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(1): Failing initialization of X screen
+(**) NVIDIA(2): Depth 24, (--) framebuffer bpp 32
+(==) NVIDIA(2): RGB weight 888
+(==) NVIDIA(2): Default visual is TrueColor
+(==) NVIDIA(2): Using gamma correction (1.0, 1.0, 1.0)
+(**) NVIDIA(2): Enabling 2D acceleration
+(II) NVIDIA: The X server does not support PRIME Render Offload.
+(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA GPU at PCI:131:0:0.  Please
+(EE) NVIDIA(GPU-2):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-2):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-2):     README for additional information.
+(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(2): Failing initialization of X screen
+(**) NVIDIA(3): Depth 24, (--) framebuffer bpp 32
+(==) NVIDIA(3): RGB weight 888
+(==) NVIDIA(3): Default visual is TrueColor
+(==) NVIDIA(3): Using gamma correction (1.0, 1.0, 1.0)
+(**) NVIDIA(3): Enabling 2D acceleration
+(II) NVIDIA: The X server does not support PRIME Render Offload.
+(EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA GPU at PCI:132:0:0.  Please
+(EE) NVIDIA(GPU-3):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-3):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-3):     README for additional information.
+(EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(3): Failing initialization of X screen
+(EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA GPU at PCI:14:0:0.  Please
+(EE) NVIDIA(GPU-1):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-1):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-1):     README for additional information.
+(EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA GPU at PCI:131:0:0.  Please
+(EE) NVIDIA(GPU-2):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-2):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-2):     README for additional information.
+(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA GPU at PCI:132:0:0.  Please
+(EE) NVIDIA(GPU-3):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-3):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-3):     README for additional information.
+(EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA graphics device!
+(II) NVIDIA(GPU-1): Deleting GPU-1
+(II) NVIDIA(GPU-2): Renaming GPU-2 to GPU-1
+(II) NVIDIA(GPU-3): Renaming GPU-3 to GPU-2
+(II) NVIDIA(GPU-1): Deleting GPU-1
+(II) NVIDIA(GPU-2): Renaming GPU-2 to GPU-1
+(II) NVIDIA(GPU-1): Deleting GPU-1
+(II) NVIDIA: Reserving 6144.00 MB of virtual memory for indirect memory
+(II) NVIDIA:     access.
+(II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+(II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+(II) NVIDIA(0):     configuration option may not be set correctly.  When the
+(II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+(II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+(II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+(II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+(II) NVIDIA(0):     Config Options in the README.
+(II) NVIDIA(0): Setting mode "NULL"
+(==) NVIDIA(0): Disabling shared memory pixmaps
+(==) NVIDIA(0): Backing store enabled
+(==) NVIDIA(0): Silken mouse enabled
+(**) NVIDIA(0): DPMS enabled
+(II) NVIDIA(0): [DRI2] Setup complete
+(II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+(II) SELinux: Disabled on system
+(II) Initializing extension GLX
+(II) GLX: Another vendor is already registered for screen 0
+(II) config/udev: Adding input device Power Button (/dev/input/event0)
+(**) Power Button: Applying InputClass "evdev keyboard catchall"
+(**) Power Button: Applying InputClass "libinput keyboard catchall"
+(II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+(II) Module libinput: vendor="X.Org Foundation"
+	compiled for 1.20.0, module version = 0.27.1
+(II) Using input driver 'libinput' for 'Power Button'
+(**) Power Button: always reports core events
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(II) config/udev: Adding input device PC Speaker (/dev/input/event1)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+  ^C(II) NVIDIA(GPU-0): Deleting GPU-0
+(II) Server terminated successfully (0). Closing log file.
+
