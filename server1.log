@@ -1,6 +1,6 @@
-[pl543@c22n01 ~]$ /usr/bin/X  :6.0 -verbose
+[pl543@c22n01 ~]$ /usr/bin/X -verbose
 _XSERVTransSocketOpenCOTSServer: Unable to open socket for inet6
-_XSERVTransOpen: transport open failed for inet6/c22n01.grace.hpc.yale.internal:6
+_XSERVTransOpen: transport open failed for inet6/c22n01.grace.hpc.yale.internal:0
 _XSERVTransMakeAllCOTSServerListeners: failed to open listener for inet6
 
 X.Org X Server 1.20.4
@@ -16,7 +16,7 @@ Current version of pixman: 0.34.0
 Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-(==) Log file: "/var/log/Xorg.6.0.log", Time: Fri Mar 25 16:14:42 2022
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Mar 25 22:07:24 2022
 (==) Using config file: "/etc/X11/xorg.conf"
 (==) Using config directory: "/etc/X11/xorg.conf.d"
 (==) Using system config directory "/usr/share/X11/xorg.conf.d"
@@ -70,7 +70,7 @@ Markers: (--) probed, (**) from config file, (==) default setting,
 	compiled for 1.6.99.901, module version = 1.0.0
 (II) NVIDIA dlloader X Driver  470.82.01  Wed Oct 27 21:23:16 UTC 2021
 (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
-(--) using VT number 7
+(--) using VT number 2
 
 (II) Loading /usr/lib64/xorg/modules/libfb.so
 (II) Module fb: vendor="X.Org Foundation"
@@ -88,15 +88,12 @@ Markers: (--) probed, (**) from config file, (==) default setting,
 	compiled for 1.6.99.901, module version = 1.0.0
 (II) NVIDIA GLX Module  470.82.01  Wed Oct 27 21:19:55 UTC 2021
 (II) NVIDIA: The X server does not support PRIME Render Offload.
-(II) NVIDIA(0): NVIDIA GPU Tesla K80 (GK210) at PCI:13:0:0 (GPU-0)
-(--) NVIDIA(0): Memory: 11796480 kBytes
-(--) NVIDIA(0): VideoBIOS: 80.21.1f.00.01
-(II) NVIDIA(0): Detected PCI Express Link width: 16X
-(II) NVIDIA(0): Validated MetaModes:
-(II) NVIDIA(0):     "NULL"
-(**) NVIDIA(0): Virtual screen size configured to be 1920 x 1200
-(WW) NVIDIA(0): Unable to get display device for DPI computation.
-(==) NVIDIA(0): DPI set to (75, 75); computed from built-in default
+(EE) NVIDIA(GPU-0): Failed to initialize the NVIDIA GPU at PCI:13:0:0.  Please
+(EE) NVIDIA(GPU-0):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-0):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-0):     README for additional information.
+(EE) NVIDIA(GPU-0): Failed to initialize the NVIDIA graphics device!
+(EE) NVIDIA(0): Failing initialization of X screen
 (**) NVIDIA(1): Depth 24, (--) framebuffer bpp 32
 (==) NVIDIA(1): RGB weight 888
 (==) NVIDIA(1): Default visual is TrueColor
@@ -115,12 +112,15 @@ Markers: (--) probed, (**) from config file, (==) default setting,
 (==) NVIDIA(2): Using gamma correction (1.0, 1.0, 1.0)
 (**) NVIDIA(2): Enabling 2D acceleration
 (II) NVIDIA: The X server does not support PRIME Render Offload.
-(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA GPU at PCI:131:0:0.  Please
-(EE) NVIDIA(GPU-2):     check your system's kernel log for additional error
-(EE) NVIDIA(GPU-2):     messages and refer to Chapter 8: Common Problems in the
-(EE) NVIDIA(GPU-2):     README for additional information.
-(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA graphics device!
-(EE) NVIDIA(2): Failing initialization of X screen
+(II) NVIDIA(2): NVIDIA GPU Tesla K80 (GK210) at PCI:131:0:0 (GPU-2)
+(--) NVIDIA(2): Memory: 11796480 kBytes
+(--) NVIDIA(2): VideoBIOS: 80.21.1f.00.01
+(II) NVIDIA(2): Detected PCI Express Link width: 16X
+(II) NVIDIA(2): Validated MetaModes:
+(II) NVIDIA(2):     "NULL"
+(**) NVIDIA(2): Virtual screen size configured to be 1920 x 1200
+(WW) NVIDIA(2): Unable to get display device for DPI computation.
+(==) NVIDIA(2): DPI set to (75, 75); computed from built-in default
 (**) NVIDIA(3): Depth 24, (--) framebuffer bpp 32
 (==) NVIDIA(3): RGB weight 888
 (==) NVIDIA(3): Default visual is TrueColor
@@ -133,25 +133,28 @@ Markers: (--) probed, (**) from config file, (==) default setting,
 (EE) NVIDIA(GPU-3):     README for additional information.
 (EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA graphics device!
 (EE) NVIDIA(3): Failing initialization of X screen
+(II) Unloading glxserver_nvidia
+(EE) NVIDIA(GPU-0): Failed to initialize the NVIDIA GPU at PCI:13:0:0.  Please
+(EE) NVIDIA(GPU-0):     check your system's kernel log for additional error
+(EE) NVIDIA(GPU-0):     messages and refer to Chapter 8: Common Problems in the
+(EE) NVIDIA(GPU-0):     README for additional information.
+(EE) NVIDIA(GPU-0): Failed to initialize the NVIDIA graphics device!
 (EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA GPU at PCI:14:0:0.  Please
 (EE) NVIDIA(GPU-1):     check your system's kernel log for additional error
 (EE) NVIDIA(GPU-1):     messages and refer to Chapter 8: Common Problems in the
 (EE) NVIDIA(GPU-1):     README for additional information.
 (EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA graphics device!
-(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA GPU at PCI:131:0:0.  Please
-(EE) NVIDIA(GPU-2):     check your system's kernel log for additional error
-(EE) NVIDIA(GPU-2):     messages and refer to Chapter 8: Common Problems in the
-(EE) NVIDIA(GPU-2):     README for additional information.
-(EE) NVIDIA(GPU-2): Failed to initialize the NVIDIA graphics device!
 (EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA GPU at PCI:132:0:0.  Please
 (EE) NVIDIA(GPU-3):     check your system's kernel log for additional error
 (EE) NVIDIA(GPU-3):     messages and refer to Chapter 8: Common Problems in the
 (EE) NVIDIA(GPU-3):     README for additional information.
 (EE) NVIDIA(GPU-3): Failed to initialize the NVIDIA graphics device!
-(II) NVIDIA(GPU-1): Deleting GPU-1
+(II) NVIDIA(GPU-0): Deleting GPU-0
+(II) NVIDIA(GPU-1): Renaming GPU-1 to GPU-0
 (II) NVIDIA(GPU-2): Renaming GPU-2 to GPU-1
 (II) NVIDIA(GPU-3): Renaming GPU-3 to GPU-2
-(II) NVIDIA(GPU-1): Deleting GPU-1
+(II) NVIDIA(GPU-0): Deleting GPU-0
+(II) NVIDIA(GPU-1): Renaming GPU-1 to GPU-0
 (II) NVIDIA(GPU-2): Renaming GPU-2 to GPU-1
 (II) NVIDIA(GPU-1): Deleting GPU-1
 (II) NVIDIA: Reserving 6144.00 MB of virtual memory for indirect memory
@@ -186,5 +189,4 @@ Markers: (--) probed, (**) from config file, (==) default setting,
 (II) config/udev: Adding input device PC Speaker (/dev/input/event1)
 (II) No input driver specified, ignoring this device.
 (II) This device may have been added with another device file.
-  ^C(II) NVIDIA(GPU-0): Deleting GPU-0
-(II) Server terminated successfully (0). Closing log file.
+
